@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			font-family: 'Poppins', sans-serif;
+            font-size: 20px;
+		}
+		body{
+			background: rgb(255, 245, 230);
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.container{
+            height: 1300px;
+            width: 1000px;
+			position: relative;
+			background: white;
+			margin: 40px;
+			box-shadow: 0 35px 45px rgba(0,0,0,0.2);
+			display: grid; 
+			grid-template-columns: 2fr 5fr; 
+		}
+		.container .leftSide{
+           	position: relative;
+			background: rgb(255, 230, 204);
+			padding: 20px;
+		}
+		.profileText{
+			position: relative;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			padding-bottom: 10px;
+			border-bottom: 3px solid rgba(255, 255, 255, 0.6);
+		}
+		.profileText .imgBox{
+			position: relative;	
+			width: 140px;
+			height: 140px;
+			border-radius: 50%;
+			overflow: hidden;
+			border: solid 3px orange;
+		}	
+		.profileText .imgBox img{
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;		
+		}   
+		.profileText h2{
+			margin: 10px auto;
+			font-weight: 500;
+			font-size: 1.5rem;
+			line-height: 1.5rem;
+		}
+		.profileText p{
+			margin: 10px auto;
+			font-size: 0.8rem;
+			font-weight: 400;
+		}
+		.contactInfo{
+			padding-top: 30px;
+		}
+		.title{
+			text-transform: uppercase;
+			font-weight: 600;
+			letter-spacing: 1px;
+			margin: 0px auto 10px auto;
+		}
+		ul{
+			position: relative;
+		}
+		ul li{
+			position: relative;
+			list-style: none;
+			margin: 10px 0;
+		}
+		ul li .icon{
+			display: inline-block;
+			width: 30px;
+			font-size: 18px;
+			color: orange
+		}
+		ul li span{
+			font-size: 0.8rem;
+			font-weight: 400;
+		}
+        .skills{
+            margin: 30px 0 0 0;
+        }
+        .bars{
+			margin-top: 10px;
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			grid-gap: 20px 10px;
+			padding: 0px 20px;
+		}		
+		.bars div span{
+			display: block;
+			width: 100%;
+			height: 10px;
+			background-color: rgb(255, 245, 230);
+			margin: 5px 0px;
+			border-radius: 10px;
+			position: relative;
+		}
+		.bars div span::before{
+			position: absolute;
+			content: "";			
+			height: 100%;
+			background-color: orange;
+			top: 50%;
+			left: 0px;			
+			transform: translateY(-50%);
+			border-radius: 10px;
+		}
+        .bars div:nth-child(1) span::before{
+            width: 90%;
+        }
+        .bars div:nth-child(2) span::before{
+            width: 70%;
+        }
+        .bars div:nth-child(3) span::before{
+            width: 20%;
+        }
+        .bars div:nth-child(4) span::before{
+            width: 10%;
+        }
+        .bars div:nth-child(5) span::before{
+            width: 10%;
+        }       
+     	.container .rightSide{
+			position: relative;
+			background: white;
+			padding: 20px 40px;
+		}
+		.container .rightSide article{
+			margin: 0 0 50px 0px;
+		}		
+		.container .rightSide article ul{
+			margin: 0 0 10px 5px;
+		}
+		.container .rightSide article ul li .text{
+			font-size: 1.6rem;
+			margin: 0 0 0 10px;
+			font-weight: 600;
+		}
+		.container .rightSide article ul li .icon{
+			font-size: 1.5rem;
+			margin: 0 0 10px 0px;
+		}
+		.container .rightSide article div{
+			position: relative;
+			margin: 10px 0px 10px 0px;
+		}
+		.container .rightSide article div span{	
+			position: absolute;
+			color: 	rgb(172,172,172);
+			right: 0;
+			top: 0;
+			font-size: 0.9rem;			
+		}
+		.container .rightSide article div h2{
+			font-size: 1.3rem;
+			font-weight: 500;
+		}
+		.container .rightSide article div h3{
+			font-size: 1rem;
+			font-weight: 400;
+		}
+		.container .rightSide article div p{
+			font-size: 0.9rem;
+			font-weight: 400;
+		}		
+		.container .rightSide article:nth-child(1) div:nth-child(2) span,
+		.container .rightSide article:nth-child(2) div:nth-child(2) span
+		{
+			color: orange;	
+			font-weight: 400;
+			font-size: 0.9rem;			
+		}
+		footer #download{
+			position:absolute;
+			bottom:0;
+			border:solid 1px black;
+			background:orange;
+			border-radius: 5px;
+			padding:0 5px;
+		}
